@@ -1,0 +1,105 @@
+{
+	"include": [
+		//"~/.config/waybar/modules/idle_inhitor.jsonc",
+		"~/.config/waybar/modules/memory.jsonc",
+		"~/.config/waybar/modules/temperature.jsonc",
+		"~/.config/waybar/modules/clock.jsonc",
+		"~/.config/waybar/modules/pulseaudio.jsonc",
+		"~/.config/waybar/modules/lock.jsonc",
+		"~/.config/waybar/modules/gpu.jsonc",
+		"~/.config/waybar/modules/tray.jsonc",
+		"~/.config/waybar/modules/cava.jsonc",
+		"~/.config/waybar/modules/cpu.jsonc",
+		/*"~/.config/waybar/modules/mpris.jsonc",*/
+    "~/.config/waybar/modules/media.jsonc",
+		"~/.config/waybar/modules/custom/dividers.jsonc",
+		"~/.config/waybar/modules/custom/distro.jsonc",
+		"~/.config/waybar/modules/custom/system_update.jsonc",
+		"~/.config/waybar/modules/hyprland/*.jsonc"
+	],
+	
+	/*------------
+		layout
+	------------*/
+
+	"modules-left": [
+		"custom/right_div#10",
+		"custom/right_div#9",
+		"hyprland/workspaces",
+		"custom/right_div#8",
+		"hyprland/window"
+	],
+	"modules-center": [
+		"custom/left_div#4",
+		"memory",
+		"custom/left_div#3",
+		"custom/gpu",
+		"custom/left_div#2",
+		"cpu",
+		"custom/left_inv#1",
+		"custom/left_div#1",
+		"custom/distro",
+		"custom/right_div#1",
+		"custom/right_inv#1",
+		//"idle_inhibitor",
+		"clock#time",
+		"custom/right_div#2",
+		"clock#date",
+		"custom/right_div#3",
+		"custom/temperature",
+		"custom/right_div#4"
+		/*"custom/system_update",
+		"custom/right_div#5"*/
+	],
+	"modules-right": [
+		"custom/media",
+    /*"mpris",
+		"custom/left_div#6",
+		"custom/tray",*/
+		"custom/left_div#6",
+		"pulseaudio",
+		"custom/left_div#7",
+		"custom/lock",
+		"custom/left_div#8",
+		"custom/left_div#9",
+		"custom/left_div#10"
+	],
+
+/* apps */
+  "(.*)Spotify": 
+        "<span foreground='#a6e3a1'> </span> Spotify",
+      "(.*)Spotify Premium": 
+        "<span foreground='#a6e3a1'> </span> Spotify Premium",
+"vesktop": 
+        "<span foreground='#89b4fa'> </span> Discord",
+  "(.*)Mozilla Firefox": 
+        "<span foreground='#f38ba8'>󰈹 </span> Firefox",
+      "(.*) — Mozilla Firefox": 
+        "<span foreground='#f38ba8'>󰈹 </span> $1",
+
+	/*-------------
+		options
+	-------------*/
+	"layer": "top",
+	// "output":
+	// "position":
+	"height": 0,
+	"width": 0,
+	"margin": 0,
+	// "margin-top":
+	// "margin-left":
+	// "margin-bottom":
+	// "margin-right":
+	"spacing": 0,
+	// "name":
+	"mode": "dock",
+	// "start_hidden":
+	// "modifier-reset":
+	// "exclusive":
+	// "fixed-center":
+	// "passthrough":
+	// "ipc":
+	// "id":
+	"reload_style_on_change": false
+	// "gtk-layer-shell":
+}
