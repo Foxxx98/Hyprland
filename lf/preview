@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Image previews
+if file --mime-type -Lb "$1" | grep -qE '^image/'; then
+  ueberzugpp layer --parser simple --silent --use-escape-codes show < <(
+    printf "path=%s\nx=1\ny=1\nwidth=%s\nheight=%s\n" "$1" "$2" "$3"
+  )
+  exit 1
+fi
+
+# Fallback: use bat for text previews
+if command -v bat >/dev/null 2>&1; then
+  bat --style=numbers --color=always --line-range=:500 "$1"
+  exit 0
+fi
+
+# Default: just head
+head -n 100 "$1"

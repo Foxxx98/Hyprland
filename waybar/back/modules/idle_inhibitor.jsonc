@@ -1,0 +1,7 @@
+"idle_inhibitor": {
+    "format-activated": "A",
+    "format-deactivated": "D",
+    "tooltip-format-activated": "Presentation Mode (Activated)",
+    "tooltip-format-deactivated": "Idle Mode (Deactivated)",
+    "start-activated": false
+}

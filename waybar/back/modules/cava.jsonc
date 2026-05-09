@@ -1,0 +1,21 @@
+{ 
+	"cava": {
+                "cava_config": "$HOME/.config/cava/config",
+                "framerate": 60,
+                "bars": 14,
+                "bar_delimiter": 0,
+                "format-icons": [
+                        "▁",
+                        "▂",
+                        "▃",
+                        "▄",
+                        "▅",
+                        "▆",
+                        "▇",
+                        "█"
+                ],
+                "actions": {
+                        "on-click-right": "mode"
+                }
+        }
+}
