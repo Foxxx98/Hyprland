@@ -1,0 +1,36 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/nvme0n1p1
+UUID=4633788a-c1d6-4057-bbf3-a3b3d1f0b7a8	/         	ext4      	rw,relatime	0 1
+
+# /dev/nvme0n1p2
+UUID=C33A-FAA6      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/sda1
+UUID=15aef57b-20a4-4098-bba3-2777ee62d6f8       /ThousanD/XternD/Access    ext4       rw,user,exec    0 3
+
+# /dev/sda2
+UUID=942ffd93-9598-4580-8e8b-7e77a02d2e5e       /ThousanD/XternD/Projects  ext4       rw,user,exec    0 3
+
+# /dev/sda3
+UUID=c8bb4a21-7cf8-415f-a9a6-ec1825493c87       /ThousanD/XternD/Academic  ext4       rw,user,exec    0 4
+
+# /dev/sdb2
+#UUID=ec79e992-8583-4ea5-b24c-73d82d8f16a2       /ThousanD/XternD/Play      ext4       rw,user,exec    0 4
+
+# /dev/sdc1
+#UUID=fd7beedb-3992-46e2-8f97-ef1fd3e97a31      /ThousanD/XternD/MediaDT    ext4       rw,user,exec    0 4
+
+#/dev/sdf1
+#UUID=76BF-A46B                                  /ThousanD/XternD/AmD1     exfat       rw,user,exec    0 5
+
+#/dev/sde1
+#UUID=8444-89C5                                  /ThousanD/XternD/AmD2     exfat       rw,user,exec    0 5
+
+#/dev/sdc1
+UUID=0455ebdd-e9c9-48d4-b44d-386018d0c582       /ThousanD/XternD/AmD3      ext4       rw,user,exec    0 5
+
+#/dev/sdc2
+UUID=b6fb9dae-360f-4a18-807f-67dff9cc371c       /ThousanD/XternD/DownsDT   ext4       rw,user,exec    0 4
